@@ -5,20 +5,20 @@
 var a = [];
 for(let i = 0; i <10 ; i++){
     a[i] = function(){
-        console.log(i);//块级作用域，为函数中的i赋了值
+        console。log(i);//块级作用域，为函数中的i赋了值
     }
 }
-console.log("let:")
+console。log("let:")
 for(let i = 0; i<10; i++){
     a[i]();//0~9
 }
 var b = [];
 for(var i = 0; i < 10; i++){
     b[i] = function(){
-        console.log(i);//函数级作用域，没有为i赋值，打印的是最终的i
+        console。log(i);//函数级作用域，没有为i赋值，打印的是最终的i
     }
 }
-console.log("var:");
+console。log("var:");
 for(let i = 0; i<10 ;i++){
     b[i]();//10
 }
@@ -27,12 +27,12 @@ const PI = 3.1415;
 
 /*对象的解构赋值*/
 var person = {
-    pname : "Qxy",
-    age : 20,
+    pname : "Qxy"，
+    age : 20，
 }
 //就是将成员专属于某个对象
-const {pname,age} = person;
-console.log(pname,age);
+const {pname，age} = person;
+console。log(pname，age);
 
 const {log} = console;
 log(pname,age);
